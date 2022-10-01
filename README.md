@@ -79,3 +79,16 @@ Stabilization protocol:
 ![Chord](/images/8.png)
 ![Chord](/images/9.png)
 ![Chord](/images/11.png)
+
+USAGE
+The Peer:
+Usage:
+
+For the first node joining the ring python3 Node_DHT.py port_number here port_number is the port at which the node will listen for requests.
+
+For any forth coming nodes into the ring python3 Node_DHT.py <port number of new node> <port number of existing node> here "port number of new node" is the port at which the node will listen for requests and "port number of existing node" is the port number of any of the other pre existing nodes in the ring.
+
+The Client:
+Usage: python3 Client.py
+
+The client is menu driven where we need to provide inputs like the port number of the node which the client wants to connect to and then the option according to the task the client wants to perform like insert, search, delete etc.

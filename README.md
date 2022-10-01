@@ -22,6 +22,7 @@ What is Chord?
 * Availability: chord automatically adjusts its internal tables to ensure that the node responsible for a key can always be found
 * Flexible naming: no constraints on the structure of the keys – key-space is flat, flexibility in how to map names to Chord keys
 # The Chord algorithm –
+![Chord](/images/Screenshot (233).png)
 Construction of the Chord ring
 * Hash function assigns each node and key an m-bit identifier using a base hash function such as SHA-1
 * ID(node) = hash(IP, Port)

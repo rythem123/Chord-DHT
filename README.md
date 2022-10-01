@@ -75,7 +75,7 @@ Stabilization protocol:
 * Stabilize(): n asks its successor for its predecessor p and decides whether p should be n‘s successor instead (this is the case if p recently joined the system).
 * Notify(): notifies n‘s successor of its existence, so it can change its predecessor to n
 * Fix_fingers(): updates finger tables
-  ![Chord](/images/7.png)
+![Chord](/images/7.png)
 ![Chord](/images/8.png)
 ![Chord](/images/9.png)
 ![Chord](/images/11.png)

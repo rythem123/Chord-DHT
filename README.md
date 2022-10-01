@@ -40,7 +40,6 @@ Construction of the Chord ring
 # The Chord algorithm –
 Simple node localization
 // ask node n to find the successor of id
-
 ~~~bash
 n.find_successor(id)
    if (id    (n; successor])
@@ -52,6 +51,7 @@ n.find_successor(id)
 ~~~     
 # The Chord algorithm –
 Scalable node localization
+![Chord](/images/3.png)
 * Additional routing information to accelerate lookups
 * Each node n contains a routing table with up to m entries (m: number of bits of the identifiers) => finger table
 * i entry in the table at node n contains the first node s that succeds n by at least 2
@@ -62,13 +62,15 @@ Important characteristics of this scheme:
 * Each node stores information about only a small number of nodes (m)
 * Each nodes knows more about nodes closely following it than about nodes farer away
 * A finger table generally does not contain enough information to directly determine the successor of an arbitrary key k
-
+![Chord](/images/16.png)
 
 # The Chord algorithm –
 Node joins and stabilization
+![Chord](/images/0.png)
 * To ensure correct lookups, all successor pointers must be up to date
 * => stabilization protocol running periodically in the background
 * Updates finger tables and successor pointers
+![Chord](/images/14.png)
 Stabilization protocol:
 * Stabilize(): n asks its successor for its predecessor p and decides whether p should be n‘s successor instead (this is the case if p recently joined the system).
 * Notify(): notifies n‘s successor of its existence, so it can change its predecessor to n
